@@ -1,13 +1,17 @@
 import { FormEvent, useState } from "react";
 import { useHistory } from "react-router";
+
 import illustrationImg from "../assets/images/illustration.svg";
 import logoImg from "../assets/images/logo.svg";
 
-import {Button} from "../components/Button";
+import { Button } from "../components/Button";
+
 import { useAuth } from "../hooks/useAuth";
+
 import { database } from "../services/firebase";
 
 import "../styles/auth.scss";
+
 
 export function NewRoom() {
   const {user} = useAuth();
@@ -34,27 +38,27 @@ export function NewRoom() {
   return (
     <div id="page-auth">
       <aside>
-        <img src={illustrationImg} alt="ilustração simbolizando perguntas e respostas" />
-        <strong>Crie salas de Q&amp;A ao vivo</strong>
-        <p>Tire dúvidas do seu público em tempo real</p>
+        <img src={illustrationImg} alt="Q and A illustration" />
+        <strong>Create live Q&amp;A chatting rooms</strong>
+        <p>Chat and answer questions in real time</p>
       </aside>
       <main>
         <div className="main-content">
           <img src={logoImg} alt="Pergunta Pro Pai" />
-          <h2>Criar uma nova sala</h2>
+          <h2>Create new room</h2>
           <form onSubmit={handleCreateRoom}>
             <input
               type="text"
-              placeholder="Nome da sala"
+              placeholder="Room name"
               onChange={event => setNewRoom(event.target.value)}
               value={newRoom}
             />
             <Button type="submit">
-              Criar sala
+              Create room
             </Button>
           </form>
           <p>
-            Quer entrar em uma sala existente? <a href="/">Clique aqui</a>
+            <a href="/">Join an existing room</a>
           </p>
         </div>
       </main>
