@@ -1,13 +1,14 @@
 # Pergunta pro Pai
 
-<div>
-  <img src=".github/perguntapropai.svg" width="200px" />
-  <div>
-    <img src="https://img.shields.io/github/languages/count/vcwild/pergunta-pro-pai?color=%23FBC86D&style=flat-square" alt="languages" />
-    <img src="https://img.shields.io/github/license/vcwild/pergunta-pro-pai?color=%23FBC86D&style=flat-square" alt="license" />
-    <img src="https://img.shields.io/github/repo-size/vcwild/pergunta-pro-pai?color=%23FBC86D&style=flat-square" alt="repo size" />
+  <div align="center">
+    <img src=".github/perguntapropai.png" width="200px" />
   </div>
-</div>
+  <div align="center">
+    <img src="https://img.shields.io/github/languages/count/vcwild/pergunta-pro-pai?color=%23835afd&style=flat-square" alt="languages" />
+    <img src="https://img.shields.io/github/license/vcwild/pergunta-pro-pai?color=%23835afd&style=flat-square" alt="license" />
+    <img src="https://img.shields.io/github/repo-size/vcwild/pergunta-pro-pai?color=%23835afd&style=flat-square" alt="repo size" />
+  </div>
+
 
 __Pergunta pro Pai__ is a question and answers management app for handling live Q&A sessions in chatting rooms.
 
